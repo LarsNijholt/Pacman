@@ -28,32 +28,31 @@ float Ghost::Get_Target_Distance(unsigned char i_direction)
 
 	switch (i_direction)
 	{
-	case 0:
-	{
-		x += GHOST_SPEED;
+		case 0:
+		{
+			x += GHOST_SPEED;
 
-		break;
-	}
+			break;
+		}
 
-	case 1:
-	{
-		y -= GHOST_SPEED;
+		case 1:
+		{
+			y -= GHOST_SPEED;
 
-		break;
-	}
+			break;
+		}
 
-	case 2:
-	{
-		x -= GHOST_SPEED;
+		case 2:
+		{
+			x -= GHOST_SPEED;
 
-		break;
-	}
+			break;
+		}
 
-	case 3:
-	{
-		y += GHOST_SPEED;
-
-	}
+		case 3:
+		{
+			y += GHOST_SPEED;
+		}
 	}
 
 	// Using the pythagorean theorem to calculate the distance.
@@ -85,31 +84,31 @@ void Ghost::Draw(bool i_flash, sf::RenderWindow& i_window)
 	{
 		switch (id)
 		{
-		case 0: // Red color.
-		{
-			body.setColor(sf::Color(255, 0, 0));
+			case 0: // Red color.
+			{
+				body.setColor(sf::Color(255, 0, 0));
 
-			break;
-		}
+				break;
+			}
 
-		case 1: // Pink color.
-		{
-			body.setColor(sf::Color(255, 182, 255));
+			case 1: // Pink color.
+			{
+				body.setColor(sf::Color(255, 182, 255));
 
-			break;
-		}
+				break;
+			}
 
-		case 2: // Blue color.
-		{
-			body.setColor(sf::Color(0, 255, 255));
+			case 2: // Blue color.
+			{
+				body.setColor(sf::Color(0, 255, 255));
 
-			break;
-		}
+				break;
+			}
 
-		case 3: // Orange color.
-		{
-			body.setColor(sf::Color(255, 182, 85));
-		}
+			case 3: // Orange color.
+			{
+				body.setColor(sf::Color(255, 182, 85));
+			}
 		}
 
 		face.setTextureRect(sf::IntRect(CELL_SIZE * Direction, CELL_SIZE, CELL_SIZE, CELL_SIZE));
@@ -289,8 +288,8 @@ void Ghost::Update(unsigned char i_level, std::array<std::array<Cell, MAP_HEIGHT
 			{
 				while (1 == Walls[random_direction] || random_direction == (2 + Direction) % 4)
 				{
-					// We keep picking a random direction until we can use it/
-					random_direction == rand() % 4;
+					// We keep picking a random direction until we can use it.
+					random_direction = rand() % 4;
 				}
 
 				Direction = random_direction;
