@@ -1,0 +1,17 @@
+﻿  Ghost.cpp
+C:\Users\larsn\source\repos\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+C:\Users\larsn\source\repos\Pacman\Ghost.cpp(293,23): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\larsn\source\repos\Pacman\Ghost.cpp(202,107): warning C4390: ';': empty controlled statement found; is this the intent?
+  Main.cpp
+C:\Users\larsn\source\repos\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+C:\Users\larsn\source\repos\Pacman\Main.cpp(82,23): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  MapCollision.cpp
+C:\Users\larsn\source\repos\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  Pacman.cpp
+C:\Users\larsn\source\repos\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  Generating Code...
+  Pacman.vcxproj -> C:\Users\larsn\source\repos\Pacman\x64\Debug\Pacman.exe
