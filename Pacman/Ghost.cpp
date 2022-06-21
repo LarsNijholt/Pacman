@@ -422,100 +422,99 @@ void Ghost::Update_Target(unsigned char i_pacman_direction, const Location& i_gh
 		{
 			switch (id)
 			{
-			case 0: // The red ghost will chase Pacman.
-			{
-				target = i_pacman_location;
-
-				break;
-			}
-			case 1: // The pink ghost will chase the 4th cell in front of Pacman.
-			{
-				target = i_pacman_location;
-
-				switch (i_pacman_direction)
-				{
-				case 0:
-				{
-					target.x += CELL_SIZE * GHOST1_CHASE;
-
-					break;
-				}
-
-				case 1:
-				{
-					target.y -= CELL_SIZE * GHOST1_CHASE;
-
-					break;
-				}
-				case 2:
-				{
-					target.x -= CELL_SIZE * GHOST1_CHASE;
-
-					break;
-				}
-				case 3:
-				{
-					target.y += CELL_SIZE * GHOST1_CHASE;
-				}
-				}
-				break;
-			}
-			case 2: // The blue ghost
-			{
-				target = i_pacman_location;
-
-				// Getting the second cell in front of pacman.
-				switch (i_pacman_direction)
-				{
-				case 0:
-				{
-					target.x += CELL_SIZE * GHOST2_CHASE;
-
-					break;
-				}
-
-				case 1:
-				{
-					target.y -= CELL_SIZE * GHOST2_CHASE;
-
-					break;
-				}
-
-				case 2:
-				{
-					target.x -= CELL_SIZE * GHOST2_CHASE;
-
-					break;
-				}
-
-				case 3:
-				{
-					target.y += CELL_SIZE * GHOST2_CHASE;
-				}
-				}
-
-				// We're sending a cell from the red ghost to the blue ghost
-				// Then we double it
-
-				target.x += target.x - i_ghost_location.x;
-				target.y += target.y - i_ghost_location.y;
-
-				break;
-			}
-			case 3: //The orange gohst will chase Pacman until it gets close to him. Then it'll switch to the scatter mode.
-			{
-				// Pythagoras theorem.
-				if (CELL_SIZE * Ghost3_CHASE <= sqrt(pow(location.x - i_pacman_location.x, 2) + pow(location.y - i_pacman_location.y, 2)))
+				case 0: // The red ghost will chase Pacman.
 				{
 					target = i_pacman_location;
-				}
-				else
-				{
-					target = { 0, CELL_SIZE * (MAP_HEIGHT - 1) };
-				}
-			}
-			}
 
+					break;
+				}
+				case 1: // The pink ghost will chase the 4th cell in front of Pacman.
+				{
+					target = i_pacman_location;
+
+					switch (i_pacman_direction)
+					{
+						case 0:
+						{
+							target.x += CELL_SIZE * GHOST1_CHASE;
+
+							break;
+						}
+
+						case 1:
+						{
+							target.y -= CELL_SIZE * GHOST1_CHASE;
+
+							break;
+						}
+						case 2:
+						{
+							target.x -= CELL_SIZE * GHOST1_CHASE;
+
+							break;
+						}
+						case 3:
+						{
+							target.y += CELL_SIZE * GHOST1_CHASE;
+						}
+					}
+					break;
+				}
+				case 2: // The blue ghost
+				{
+					target = i_pacman_location;
+
+					// Getting the second cell in front of pacman.
+					switch (i_pacman_direction)
+					{
+						case 0:
+						{
+							target.x += CELL_SIZE * GHOST2_CHASE;
+
+							break;
+						}
+
+						case 1:
+						{
+							target.y -= CELL_SIZE * GHOST2_CHASE;
+
+							break;
+						}
+
+						case 2:
+						{
+							target.x -= CELL_SIZE * GHOST2_CHASE;
+
+							break;
+						}
+
+						case 3:
+						{
+							target.y += CELL_SIZE * GHOST2_CHASE;
+						}
+					}
+
+					// We're sending a cell from the red ghost to the blue ghost
+					// Then we double it
+
+					target.x += target.x - i_ghost_location.x;
+					target.y += target.y - i_ghost_location.y;
+
+					break;
+				}
+				case 3: //The orange ghost will chase Pacman until it gets close to him. Then it'll switch to the scatter mode.
+				{
+					// Pythagoras theorem.
+					if (CELL_SIZE * Ghost3_CHASE <= sqrt(pow(location.x - i_pacman_location.x, 2) + pow(location.y - i_pacman_location.y, 2)))
+					{
+						target = i_pacman_location;
+					}
+					else
+					{
+						target = { 0, CELL_SIZE * (MAP_HEIGHT - 1) };
+					}
+				}
+			}
 		}
 	}
 }

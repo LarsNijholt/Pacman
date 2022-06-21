@@ -1,4 +1,32 @@
-﻿  Ghost.cpp
+﻿  ConvertSketch.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  DrawMap.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  DrawText.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  Ghost.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
 D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
 D:\Pacman\Pacman\Pacman\Ghost.cpp(201,107): warning C4390: ';': empty controlled statement found; is this the intent?
+  GhostManager.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  Main.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\Main.cpp(82,23): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  MapCollision.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  Pacman.cpp
+D:\Pacman\Pacman\Pacman\World.hpp(18,44): warning C4244: 'initializing': conversion from 'double' to 'const unsigned char', possible loss of data
+D:\Pacman\Pacman\Pacman\World.hpp(20,48): warning C4244: 'initializing': conversion from 'float' to 'const unsigned char', possible loss of data
+  Generating Code...
   Pacman.vcxproj -> D:\Pacman\Pacman\Pacman\x64\Debug\Pacman.exe

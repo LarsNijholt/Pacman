@@ -11,13 +11,13 @@ constexpr unsigned char GHOST2_CHASE = 1;
 // if the distance between the orange ghost and pacman is less than this value, the orange ghost will go into scatter mode.
 constexpr unsigned char Ghost3_CHASE = 4;
 // Ghost animation frames.
-constexpr unsigned char GHOST_ANIM_FRAMES = 3;
+constexpr unsigned char GHOST_ANIM_FRAMES = 6;
 // Ghost animation speed.
-constexpr unsigned char GHOST_ANIM_SPEED = 2;
+constexpr unsigned char GHOST_ANIM_SPEED = 4;
 // The speed of the ghosts after pacman energizers.
-constexpr unsigned char GHOST_ESCAPE_SPEED = 2;
+constexpr unsigned char GHOST_ESCAPE_SPEED = 1.7;
 // The higher this value the slower the ghost
-constexpr unsigned char GHOST_FRIGHTENED_SPEED = 2.5f;
+constexpr unsigned char GHOST_FRIGHTENED_SPEED = 1.2f;
 
 constexpr unsigned char GHOST_SPEED = 1;
 constexpr unsigned char MAP_WIDTH = 21;
